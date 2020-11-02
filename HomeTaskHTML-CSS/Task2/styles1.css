@@ -1,0 +1,84 @@
+
+.background-color-bisque {
+    background: bisque;
+}
+.background-size-auto{
+    background-size: auto;
+}
+.padding0{
+    padding: 0;
+}
+.margin0{
+    margin: 0;
+}
+.text-align-center{
+    text-align: center;
+}
+
+.color-red{
+    color: red;
+}
+.color-blue {
+    color: blue;
+}
+    .padding-1px{
+        padding: 1px;
+    }
+
+ .margin-0-450px{
+    margin: 0 450px;
+              }
+.border-5px-solid-blue{
+    border: 5px solid blue;
+}
+.border-radius-20per{
+    border-radius: 20%;
+}
+    .background-yellow{
+        background: yellow;
+    }
+
+.border-5px-solid-yellow{
+    border: 5px solid yellow;
+}
+.border-radius-20per{
+    border-radius: 20%;
+}
+.margin-0-auto{
+    margin: 0 auto;
+}
+.padding-1px{
+    padding: 1px;
+}
+/*_________________________________________*/
+.my-header1 {
+    text-align: center; /* Выравнивание блочного элемента по центру?????*/
+    /*display: inline-block;*/
+    color: black;
+    background: lightskyblue;
+}
+.discription{
+    background: snow;
+    border: 5px solid yellowgreen;
+    border-radius: 10%;
+}
+.groupOfFoto{
+display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+
+p {
+    font-size: x-large;
+}
+
+
+li{
+    font-size: 25px;
+    font-weight: bold;
+}
+.foto3{
+    text-align: center;
+}
+/*_________________________________________*/

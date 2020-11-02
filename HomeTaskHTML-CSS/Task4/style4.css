@@ -1,0 +1,72 @@
+.header{
+    text-align:center;
+}
+.menuAboveTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 250px 10px 250px;
+    border: ghostwhite 1px solid;
+
+}
+
+.nav-item a{
+    font-weight: 600;
+    text-wrap: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*------------------------------------------------*/
+
+.Head{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid ;
+}
+.DDmenu{
+    display: flex;
+    flex-grow: 1;
+    border: 1px solid red;
+}
+.HeadMain{
+    display: flex;
+    flex-grow: 4;
+    border: 1px solid green;
+}
+.Header0{}
+.Header1{}
+.lang{
+    display: flex;
+    flex-grow: 1;
+
+    position: center;
+    /*margin: 0px 0px 0px 80px;*/
+    /*padding: 40px 5px;*/
+    border: 1px solid blue;
+
+}
+.buttonUP {
+    flex-grow: 1;
+    border: 1px solid brown;
+    border-radius: 40%;
+    min-width: 25px;
+    height: 35px;
+    margin: 25px 10px 25px 5px;
+    padding: 15px 5px 1px 5px;
+
+}
+.buttonUP:hover{background: red;}
+/*------------------------------------------------------*/
+
+.menuUnderTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.nav-item1 a {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+}

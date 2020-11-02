@@ -1,0 +1,58 @@
+.body{
+    margin: 0px;
+}
+.backgroundOrange{
+background: orange;
+}
+.backgroundRed{
+background: red;
+}
+.backgroundGreen{
+background: green;
+}
+.backgroundBlue{
+background: blue;
+}
+.backgroundBlack{
+background: black;
+}
+.backgrounGray{
+    background: gray;
+}
+.basicSize400x300{
+    width: 400px;
+    height: 300px;
+}
+
+.basicSize100x100{
+    width: 100px;
+    height: 200px;
+}
+/*-------------------------------------------------*/
+
+
+.t {
+
+    border: black 5px solid;
+    margin: 0px;
+}
+.t1 {
+    height: 50px;
+    clear: both;
+}
+.t2 {
+    float: left;
+}
+    .t3 {
+        float: left;
+}
+.t4 {
+    float: left;
+}
+.t5 {
+    float: right;
+}
+.t6{
+    height: 50px;
+    clear: both;
+}
