@@ -71,7 +71,7 @@
 тільки булеві елементи*/
 // let mas= [true,48,12.5,null,false,25,true,'go go',75,false];
 // for (let i=0; i<mas.length; i++){
-//     if ((typeof (mas[i])=="boolean")){
+//     if ((typeof (mas[i])==="boolean")){
 //         console.log(mas[i]);
 //     }
 //   }
@@ -89,7 +89,7 @@
 тільки рядкові елементи*/
 // let mas= [true,48,12.5,null,false,25,true,'go go',75,false];
 // for (let i=0; i<mas.length; i++){
-//     if ((typeof (mas[i])=="string")){
+//     if ((typeof (mas[i])==="string")){
 //         console.log(mas[i]);
 //     }
 //   }
@@ -119,7 +119,7 @@
 // }
 
 /*- Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write*/
-// for (let i = 0;i < 10; i+=2){
+// for (let i = 0;i < 100; i+=2){
 //     console.log(i);
 //     document.write( `${i} <br>`);
 // }
@@ -151,15 +151,22 @@
 // }
 
 /*- Відтворити роботу годинника, відрахувавши  2 години 20 хвилини (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)*/
-// for (let i = 0;i < 3; i++){
-//     for (let k=0; k<60;k++){
-//         if (i==3||k==21){break}
-//         for (let j=0;j<60;j++) {
-//             console.log(i,k,j);
-//             document.write(` : ${ i} годин(и) `,` : ${ k} хвилин(и) <br>`);
+// FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+//  for (let h=0;h < 3; h++){
+//      // document.write(` : ${ i} годин(и)`)
+//      for (let m=0; m<60;m++){
+//         // document.write(` : ${ m} хвилин(и) `)
+//          for (let s=0;s<60;s++) {
+//                   if (h==2&&m==20&&s==0){
+//                         break;
+//                     }
+//               // document.write(` : ${ j} секунд(и) <br>`);
+//              console.log(h,m,s);
+//              document.write(` : ${ h} годин(и)`,` : ${ m} хвилин(и) `, ` : ${ s} секунд(и) <br>`);
 //         }
 //     }
-// }
+//  }
+
 
 // Додатково
 /*- Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.*/
@@ -167,7 +174,6 @@
 // for (let i=0; i<m.length;i++) {
 //     document.write(m[i]);
 //     console.log(m[i]); // как в консоль вывести слово????
-
 //    }
 
 /*- Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.*/

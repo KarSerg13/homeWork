@@ -326,14 +326,14 @@
 
 /*4 створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо об'єкт є числом,
 додати його в інший масив.*/
-let m = [true,48,12.5,null,false,25,true,'go go',75,false];
-let m1 = [];
-for (let i = 0; i < m.length; i++){
-    if (typeof (m[i]) == 'number'){
-        m1.push(m[i]);
-    }
-}
-console.log(m);
-console.log(m1)
+// let m = [true, 48, 12.5, null, false, 25, true, 'go go', 75, false];
+// let m1 = [];
+// for (let i = 0; i < m.length; i++) {
+//     if (typeof (m[i]) ==='number') {
+//         m1.push(m[i]);
+//     }
+// }
+// console.log(m);
+// console.log(m1)
 
 
