@@ -178,16 +178,21 @@ document.getElementById або document.getElementsByClassName або document.g
 // document.write(element.innerText)
 
 /*- змініть кожному елементу колір фону на червоний*/
-
 // let arr= document.getElementsByClassName('fc' );
 // console.log(arr);
 // for(let i=0;i<arr.length;i++){
 //     arr[i].style.backgroundColor='red'
 // }
 
+
 /*- змініть кожному елементу колір тексту на синій*/
-////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////
+document.getElementById("content").style.color='blue'
+document.getElementById("rules").style.color='blue'
+let a= document.getElementsByClassName('fc_rules')
+
+for(let i=0;i<a.length;i++){
+    a[i].style.color='blue'
+        }
 
 /*- отримати весь список класів елемента з id=rules і вивести їх в console.log*/
 // console.log(document.getElementById('rules').classList)
@@ -197,10 +202,6 @@ document.getElementById або document.getElementsByClassName або document.g
 
 
 /*- поміняти колір тексту у всіх елементів fc_rules на червоний*/
-////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////
-
-// (document.getElementsByClassName('fc_rules')).style.textDecorationColor='red'
 // let arr= document.getElementsByClassName('fc_rules');
 // console.log(arr);
 // for(let i=0;i<arr.length;i++){
