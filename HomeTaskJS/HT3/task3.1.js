@@ -189,7 +189,6 @@ document.getElementById або document.getElementsByClassName або document.g
 document.getElementById("content").style.color='blue'
 document.getElementById("rules").style.color='blue'
 let a= document.getElementsByClassName('fc_rules')
-
 for(let i=0;i<a.length;i++){
     a[i].style.color='blue'
         }
