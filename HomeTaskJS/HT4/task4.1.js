@@ -177,7 +177,7 @@
 
 /*- *** створити функцію яка буде переносити елементи з значенням 0 у кінець маисву.
     Зберігаючи при цьому порядок не нульових значень.
-Двожина масиву від 2 до 100------- что значит?? нужно ограничить дляну массива? как получать/передавать массив?
+Двожина масиву від 2 до 100         ///что значит?? нужно ограничить дляну массива? как получать/передавать массив?///
 Приклад
 [1,0,6,0,3] => [1,6,3,0,0]
 [0,1,2,3,4] => [1,2,3,4,0]
@@ -197,19 +197,55 @@
 
 /*Створити функцію яка :
 - Додає в боді блок з текстом "Hello owu"*/
+// function addElAndText(typeEl) {
+// // for ( const user of users){}
+//     let el = document.createElement("typeEl");
+//    el.innerText = 'Hello owu';
+//         document.body.appendChild(el);
+// }
+// addElAndText('h1','asdfghjkkkkllllllllllllllllllll' )
 
 /*- Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи*/
-
+// function addElAndText(typeEl, text) {
+// // for ( const user of users){}
+//     let el = document.createElement("typeEl");
+//    el.innerText = text;
+//         document.body.appendChild(el);
+//
+// }
+// addElAndText('h1','asdfghjkkkkllllllllllllllllllll' )
 
 /*- приймає масив автомобілів (можна взяти з попередніх дз ),
 та  індентифікатор елемнту в який потрібно додати список цих автомобілів.*/
+/////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 
+// let cars = [
+//     {model: 'MB', Year: 2020, power: 200, color: 'green', driver:{ name: 'q', age: 20, sex: 'male', experience: 2}},
+//     {model: 'B', Year: 2022, power: 300, color: 'red' , driver:{ name: 'w', age: 21, sex: 'female', experience: 3}},
+//     {model: 'M', Year: 2023, power: 400, color: 'blue' , driver:{ name: 'e', age: 22, sex: 'male', experience: 4}},
+//     {model: 'AM', Year: 2025, power: 500, color: 'ivory' , driver:{ name: 'r', age: 23, sex: 'female', experience: 5}},
+//     {model: 'f', Year: 2028, power: 600, color: 'yellow' , driver:{ name: 't', age: 24, sex: 'male', experience: 6}},
+// ]
+// // function arrAdd(arr, id){
+// //
+// //     }
+// // }
 
 /*Для кожного автомобіля створити свій блок, та додати його в елемент,
     індентифікатор якого ви отримали. Всі властивості авто в обному блоці*/
+// let cars2 = [
+//     {model: 'MB', Year: 2020, power: 200, color: 'green', driver:{ name: 'q', age: 20, sex: 'male', experience: 2}},
+//     {model: 'B', Year: 2022, power: 300, color: 'red' , driver:{ name: 'w', age: 21, sex: 'female', experience: 3}},
+//     {model: 'M', Year: 2023, power: 400, color: 'blue' , driver:{ name: 'e', age: 22, sex: 'male', experience: 4}},
+//     {model: 'AM', Year: 2025, power: 500, color: 'ivory' , driver:{ name: 'r', age: 23, sex: 'female', experience: 5}},
+//     {model: 'f', Year: 2028, power: 600, color: 'yellow' , driver:{ name: 't', age: 24, sex: 'male', experience: 6}},
+// ]
 
 /*- приймає масив автомобілів (можна взяти з попередніх дз ),
 та  індентифікатор елемнту в який потрібно додати список цих автомобілів.*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /*Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.*/
 

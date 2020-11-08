@@ -186,12 +186,12 @@ document.getElementById або document.getElementsByClassName або document.g
 
 
 /*- змініть кожному елементу колір тексту на синій*/
-document.getElementById("content").style.color='blue'
-document.getElementById("rules").style.color='blue'
-let a= document.getElementsByClassName('fc_rules')
-for(let i=0;i<a.length;i++){
-    a[i].style.color='blue'
-        }
+// document.getElementById("content").style.color='blue'
+// document.getElementById("rules").style.color='blue'
+// let a= document.getElementsByClassName('fc_rules')
+// for(let i=0;i<a.length;i++){
+//     a[i].style.color='blue'
+//         }
 
 /*- отримати весь список класів елемента з id=rules і вивести їх в console.log*/
 // console.log(document.getElementById('rules').classList)
