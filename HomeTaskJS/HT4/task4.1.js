@@ -220,17 +220,42 @@
 /////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-// let cars = [
-//     {model: 'MB', Year: 2020, power: 200, color: 'green', driver:{ name: 'q', age: 20, sex: 'male', experience: 2}},
-//     {model: 'B', Year: 2022, power: 300, color: 'red' , driver:{ name: 'w', age: 21, sex: 'female', experience: 3}},
-//     {model: 'M', Year: 2023, power: 400, color: 'blue' , driver:{ name: 'e', age: 22, sex: 'male', experience: 4}},
-//     {model: 'AM', Year: 2025, power: 500, color: 'ivory' , driver:{ name: 'r', age: 23, sex: 'female', experience: 5}},
-//     {model: 'f', Year: 2028, power: 600, color: 'yellow' , driver:{ name: 't', age: 24, sex: 'male', experience: 6}},
-// ]
-// // function arrAdd(arr, id){
-// //
-// //     }
-// // }
+let cars = [
+    {model: 'MB', Year: 2020, power: 200, color: 'green', driver:{ name: 'q', age: 20, sex: 'male', experience: 2}},
+    {model: 'B', Year: 2022, power: 300, color: 'red' , driver:{ name: 'w', age: 21, sex: 'female', experience: 3}},
+    {model: 'M', Year: 2023, power: 400, color: 'blue' , driver:{ name: 'e', age: 22, sex: 'male', experience: 4}},
+    {model: 'AM', Year: 2025, power: 500, color: 'ivory' , driver:{ name: 'r', age: 23, sex: 'female', experience: 5}},
+    {model: 'f', Year: 2028, power: 600, color: 'yellow' , driver:{ name: 't', age: 24, sex: 'male', experience: 6}},
+]
+
+
+// function arrAdd(arr, id){
+let k= JSON.stringify(cars)
+let divCar = document.createElement("div",);
+document.body.appendChild(divCar);
+for (let el of k) {
+    console.log(el)
+    // document.write(carsElement.driver)
+}
+// divCar.id='56'
+
+
+
+
+
+
+
+
+
+
+
+// for ( const car of cars){
+//     let divCar = document.createElement("div");
+// divCar.id= '56'
+//     divCar.innerText = car.model +' '+ car.Year +' '+ car.power +' '+ car.color+' '+ car.driver;
+//         document.body.appendChild(divCar);
+// }
+
 
 /*Для кожного автомобіля створити свій блок, та додати його в елемент,
     індентифікатор якого ви отримали. Всі властивості авто в обному блоці*/

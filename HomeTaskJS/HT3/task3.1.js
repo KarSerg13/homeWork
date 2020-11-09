@@ -158,6 +158,7 @@
 /*-- Напишіть код,  який за допомоги
 document.getElementById або document.getElementsByClassName або document.getElementsByTagName :*/
 /* - отримує текст з параграфа з id "content"*/
+
 //  let element = document.getElementById("content")
 // console.log(element.innerText)
 // document.write(element.innerText)
