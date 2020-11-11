@@ -230,31 +230,15 @@ let cars = [
 
 
 // function arrAdd(arr, id){
-let k= JSON.stringify(cars)
-let divCar = document.createElement("div",);
-document.body.appendChild(divCar);
-for (let el of k) {
+// document.body.appendChild(divCar);
+// divCar.id='58'
+for (let el of cars){
+    let divCar = document.createElement("div",);
+    divCar.innerText = el.model +'     '+ el.Year +'     '+ el.power +'     '+ el.color+'     '+ el.driver;
+    document.body.appendChild(divCar);
     console.log(el)
-    // document.write(carsElement.driver)
 }
-// divCar.id='56'
 
-
-
-
-
-
-
-
-
-
-
-// for ( const car of cars){
-//     let divCar = document.createElement("div");
-// divCar.id= '56'
-//     divCar.innerText = car.model +' '+ car.Year +' '+ car.power +' '+ car.color+' '+ car.driver;
-//         document.body.appendChild(divCar);
-// }
 
 
 /*Для кожного автомобіля створити свій блок, та додати його в елемент,
