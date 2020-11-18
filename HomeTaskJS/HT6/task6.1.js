@@ -1,28 +1,100 @@
-/*- создать массив с 20 числами.*/
-let numbers = [2, 56 ,48 ,55, 13 ,25, 78, 1, 36, 52]
+/*1- создать массив с 20 числами.*/
+// let numbers = [2, 56 ,48 ,55, 13 ,25, 78, 1, 36, 52, 48, 960,14625,3 ,55,66,89,77,66,22]
 
-// -- при помощи метода sort и колбека  отсортировать массив.
+/* 2 -- при помощи метода sort и колбека  отсортировать массив.*/
+// let numbers = [2, 56 ,48 ,55, 13 ,25, 78, 1, 36, 52, 48, 960,14625,3 ,55,66,89,77,66,22]
+// let sortNumbers = numbers.sort((a, b)=>{
+//     return a-b;
+// });                   // меняет исходный массив?
+// console.log(sortNumbers);
 
-// -- при помощи метода sort и колбека отсортировать массив в ниспадающем напралении.
-// -- при помощи filter получить числа кратные 3
-// -- при помощи filter получить числа кратные 10
-// -- перебрать (проитерировать) массив при помощи foreach()
-// -- перебрать массив при помощи map() и получить новый массив в котором все значения будут в 3 раза больше
+// 3 -- при помощи метода sort и колбека отсортировать массив в ниспадающем напралении.
+// let numbers = [2, 56 ,48 ,55, 13 ,25, 78, 1, 36, 52, 48, 960,14625,3 ,55,66,89,77,66,22]
+// let sortNumbers = numbers.sort((a, b)=>{
+//     return b-a;
+// });                   // меняет исходный массив?
+// console.log(sortNumbers);
+
+// 4 -- при помощи filter получить числа кратные 3
+// let numbers = [2, 56 ,48 ,55, 13 ,25, 78, 1, 36, 52, 48, 960,14625,3 ,55,66,89,77,66,22]
+// let f= numbers.filter((value)=>{
+//         if (value%3==0) {
+//             return value;
+//         }
+// })
+// console.log(f)
+
+
+/*5 -- при помощи filter получить числа кратные 10*/
+// let numbers = [2, 56 ,48 ,55, 13 ,25, 78, 1, 36, 52, 48, 960,14625,3 ,55,66,89,77,66,22]
+// let f= numbers.filter((value)=>{
+//         if (value%10==0) {
+//             return value;
+//         }
+// })
+// console.log(f)
+
+
+/*6-- перебрать (проитерировать) массив при помощи foreach()*/
+// let numbers = [2, 56 ,48 ,55, 13 ,25, 78, 1, 36, 52, 48, 960,14625,3 ,55,66,89,77,66,22]
+// numbers.forEach(value => {
+//     console.log( value);
+// })
+
+
+/* 7-- перебрать массив при помощи map() и получить новый массив в котором все значения будут в 3 раза больше*/
+// let numbers = [2, 56 ,48 ,55, 13 ,25, 78, 1, 36, 52, 48, 960,14625,3 ,55,66,89,77,66,22]
+// let arr= numbers.map((a)=>{
+//     return a*3;
+// })
+// console.log(arr);
+
+
+/*8- создать массив со словами на 15-20 элементов.*/
+// //let a= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda culpa esse facere id incidunt itaque laborum, nihil non, numquam officiis quas repellendus sapiente soluta, sunt tempora temporibus vero. Inventore, porro."
+// //let f = a.split(' ')
+// //console.log( f)
+
+// let arr = ["Lorem", "ipsum", "dolor", "sit", "amet,", "consectetur", "adipisicing", "elit.", "Assumenda", "culpa",
+//     "esse", "facere", "id", "incidunt", "itaque", "laborum,", "nihil", "non,", "numquam",
+//     "officiis", "quas", "repellendus", "sapiente", "soluta,", "sunt", "tempora", "temporibus", "vero.", "Inventore,", "porro."]
+
+/*9-- отсортировать его по алфавиту в восходящем порядке.*/
+// let arr = ["Lorem", "ipsum", "dolor", "sit", "amet,", "consectetur", "adipisicing", "elit.", "Assumenda", "culpa",
+//     "esse", "facere", "id", "incidunt", "itaque", "laborum,", "nihil", "non,", "numquam",
+//     "officiis", "quas", "repellendus", "sapiente", "soluta,", "sunt", "tempora", "temporibus", "vero.", "Inventore,", "porro."]
 //
-// - создать массив со словами на 15-20 элементов.
-// -- отсортировать его по алфавиту в восходящем порядке.
-// -- отсортировать его по алфавиту  в нисходящем порядке.
-// -- отфильтровать слова длиной менее 4х символов
-// -- перебрать массив при помощи map() и получить новый массив в котором все значения будут со знаком "!" в конце
+// let sortArr = arr.sort((a, b)=>{
+//     if (a>b) {return -1}
+// });                   // меняет исходный массив?
+// console.log(sortArr);
+
+/*10-- отсортировать его по алфавиту  в нисходящем порядке.*/
+// let arr = ["Lorem", "ipsum", "dolor", "sit", "amet,", "consectetur", "adipisicing", "elit.", "Assumenda", "culpa",
+//     "esse", "facere", "id", "incidunt", "itaque", "laborum,", "nihil", "non,", "numquam",
+//     "officiis", "quas", "repellendus", "sapiente", "soluta,", "sunt", "tempora", "temporibus", "vero.", "Inventore,", "porro."]
 //
+// let sortArr = arr.sort((a, b)=>{
+//     if (a<b) {return -1}
+// });                   // меняет исходный массив?
+// console.log(sortArr);
+
+
+
+// 11-- отфильтровать слова длиной менее 4х символов
+
+// 12-- перебрать массив при помощи map() и получить новый массив в котором все значения будут со знаком "!" в конце
+
+
+
 // Все робити через функції масивів (foreach, map ...тд)
 // Дан масив :
 //     let users = [ {name: 'vasya', age: 31, status: false}, {name: 'petya', age: 30, status: true}, {name: 'kolya', age: 29, status: true}, {name: 'olya', age: 28, status: false}, {name: 'max', age: 30, status: true}, {name: 'anya', age: 31, status: false}, {name: 'oleg', age: 28, status: false}, {name: 'andrey', age: 29, status: true}, {name: 'masha', age: 30, status: true}, {name: 'olya', age: 31, status: false}, {name: 'max', age: 31, status: true} ];
-// - відсортувати його за  віком (зростання , а потім окремо спадання)
-// - відсортувати його за кількістю знаків в імені  (зростання , а потім окремо спадання)
-// - пройтись по ньому та додати кожному юзеру поле id - яке характеризує унікальний індентифікатор (По якому принципу його створювати - ваше рішення), та зберегти це в новий масив (первинний масив залишиться без змін)
-// - відсортувати його за індентифікатором
-//
-//
-// -- наисать функцию калькулятора с 2мя числами и колбеком
-// -- наисать функцию калькулятора с 3мя числами и колбеком.+
+// 13- відсортувати його за  віком (зростання , а потім окремо спадання)
+// 14- відсортувати його за кількістю знаків в імені  (зростання , а потім окремо спадання)
+// 15- пройтись по ньому та додати кожному юзеру поле id - яке характеризує унікальний індентифікатор (По якому принципу його створювати - ваше рішення), та зберегти це в новий масив (первинний масив залишиться без змін)
+// 16- відсортувати його за індентифікатором
+
+
+// 17-- наисать функцию калькулятора с 2мя числами и колбеком
+// 18-- наисать функцию калькулятора с 3мя числами и колбеком.+
