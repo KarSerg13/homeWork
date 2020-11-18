@@ -141,38 +141,38 @@
 
 /*5- Создать массив из 10 объектов cars и заполнить его машинами с полями модель,
 год выпуска, мощность, цвет. (Значаения полей могу быть выдуманными)*/
-    let cars1 = [
-        {model: 'as', Year: 2020, power: 200, color: 'green' },
-        {model: 'sd', Year: 2022, power: 300, color: 'red' },
-        {model: 'df', Year: 2023, power: 400, color: 'blue' },
-        {model: 'fg', Year: 2025, power: 500, color: 'ivory' },
-        {model: 'gh', Year: 2028, power: 600, color: 'yellow' },
-        {model: 'hj', Year: 2030, power: 700, color: 'black' },
-        {model: 'jk', Year: 2035, power: 750, color: 'orange' },
-        {model: 'kl', Year: 2048, power: 850, color: 'violet' },
-        {model: 'lk', Year: 2050, power: 900, color: 'grey' },
-        {model: 'kj', Year: 2051, power: 950, color: 'whight' },
-    ]
+    // let cars1 = [
+    //     {model: 'as', Year: 2020, power: 200, color: 'green' },
+    //     {model: 'sd', Year: 2022, power: 300, color: 'red' },
+    //     {model: 'df', Year: 2023, power: 400, color: 'blue' },
+    //     {model: 'fg', Year: 2025, power: 500, color: 'ivory' },
+    //     {model: 'gh', Year: 2028, power: 600, color: 'yellow' },
+    //     {model: 'hj', Year: 2030, power: 700, color: 'black' },
+    //     {model: 'jk', Year: 2035, power: 750, color: 'orange' },
+    //     {model: 'kl', Year: 2048, power: 850, color: 'violet' },
+    //     {model: 'lk', Year: 2050, power: 900, color: 'grey' },
+    //     {model: 'kj', Year: 2051, power: 950, color: 'whight' },
+    // ]
 
 /*6- Создать массив объектов cities и заполнить его объектами с полями название,
 популяция, страна, регион. (Значаения полей могу быть выдуманными)*/
-let cities =[
-    {name: 'city1', population: 1, country: 1, region: 1},
-    {name: 'city2', population: 2, country: 2, region: 2},
-    {name: 'city3', population: 3, country: 3, region: 3},
-    {name: 'city4', population: 4, country: 4, region: 4},
-    {name: 'city5', population: 5, country: 5, region: 5},
-]
+// let cities =[
+//     {name: 'city1', population: 1, country: 1, region: 1},
+//     {name: 'city2', population: 2, country: 2, region: 2},
+//     {name: 'city3', population: 3, country: 3, region: 3},
+//     {name: 'city4', population: 4, country: 4, region: 4},
+//     {name: 'city5', population: 5, country: 5, region: 5},
+// ]
 
 /*7- Создать массив объектов cars и заполнить его машинами с полями модель,
 год выпуска, мощность, цвет, водитель. Водитель является отдельным объектом с полями имя, возраст, пол, стаж.*/
-let cars2 = [
-    {model: 'as', Year: 2020, power: 200, color: 'green', driver:{ name: 'q', age: 20, sex: 'male', experience: 2}},
-    {model: 'sd', Year: 2022, power: 300, color: 'red' , driver:{ name: 'w', age: 21, sex: 'female', experience: 3}},
-    {model: 'df', Year: 2023, power: 400, color: 'blue' , driver:{ name: 'e', age: 22, sex: 'male', experience: 4}},
-    {model: 'fg', Year: 2025, power: 500, color: 'ivory' , driver:{ name: 'r', age: 23, sex: 'female', experience: 5}},
-    {model: 'gh', Year: 2028, power: 600, color: 'yellow' , driver:{ name: 't', age: 24, sex: 'male', experience: 6}},
-]
+// let cars2 = [
+//     {model: 'as', Year: 2020, power: 200, color: 'green', driver:{ name: 'q', age: 20, sex: 'male', experience: 2}},
+//     {model: 'sd', Year: 2022, power: 300, color: 'red' , driver:{ name: 'w', age: 21, sex: 'female', experience: 3}},
+//     {model: 'df', Year: 2023, power: 400, color: 'blue' , driver:{ name: 'e', age: 22, sex: 'male', experience: 4}},
+//     {model: 'fg', Year: 2025, power: 500, color: 'ivory' , driver:{ name: 'r', age: 23, sex: 'female', experience: 5}},
+//     {model: 'gh', Year: 2028, power: 600, color: 'yellow' , driver:{ name: 't', age: 24, sex: 'male', experience: 6}},
+// ]
 
 /*8- проитерировать каждый массив из задания 5,6,7 при помощи while.*/
 // let i=0;
@@ -377,77 +377,77 @@ let cars2 = [
 
 /*21- За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement,
 розділивши всі властивості по своїм блокам (div>div*4)  */
-let users = [{
-    name: 'vasya',
-    age: 31,
-    status: false,
-    address: {city: 'Lviv', country: 'Ukraine', street: 'Shevchenko', houseNumber: 1}
-}, {
-    name: 'petya',
-    age: 30,
-    status: true,
-    address: {city: 'New York', country: 'USA', street: 'East str', houseNumber: 21}
-},
-    {
-    name: 'kolya',
-    age: 29,
-    status: true,
-    address: {city: 'Budapest', country: 'Hungary', street: 'Kuraku', houseNumber: 78}
-}, {
-    name: 'olya',
-    age: 28,
-    status: false,
-    address: {city: 'Prague', country: 'Czech', street: 'Paster', houseNumber: 56}
-}, {
-    name: 'max',
-    age: 30,
-    status: true,
-    address: {city: 'Istanbul', country: 'Turkey', street: 'Mikar', houseNumber: 39}
-}, {
-    name: 'anya',
-    age: 31,
-    status: false,
-    address: {city: 'Rio', country: 'Brasil', street: 'Ronaldi', houseNumber: 5}
-}, {
-    name: 'oleg',
-    age: 28,
-    status: false,
-    address: {city: 'Montreal', country: 'Canada', street: 'Acusto', houseNumber: 90}
-}, {
-    name: 'andrey',
-    age: 29,
-    status: true,
-    address: {city: 'Quebeck', country: 'Canada', street: 'Binaro', houseNumber: 33}
-}, {
-    name: 'masha',
-    age: 30,
-    status: true,
-    address: {city: 'Moscow', country: 'Russia', street: 'Gogolia', houseNumber: 1}
-}, {
-    name: 'olya',
-    age: 31,
-    status: false,
-    address: {city: 'Portland', country: 'USA', street: 'Forest str', houseNumber: 4}
-}, {
-    name: 'max',
-    age: 31,
-    status: true,
-    address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
-}]
-
-
-for (let user of users) {
-    let k = JSON.stringify(user);
-    let blockObj=document.createElement('div');
-    blockObj.innerText=k;
-    document.body.appendChild(blockObj);
-}
-for (us of users){
-    let k = JSON.stringify(user);
-    let blockObj=document.createElement('div');
-    blockObj.innerText=k;
-    document.body.appendChild(blockObj);
-}
+// let users = [{
+//     name: 'vasya',
+//     age: 31,
+//     status: false,
+//     address: {city: 'Lviv', country: 'Ukraine', street: 'Shevchenko', houseNumber: 1}
+// }, {
+//     name: 'petya',
+//     age: 30,
+//     status: true,
+//     address: {city: 'New York', country: 'USA', street: 'East str', houseNumber: 21}
+// },
+//     {
+//     name: 'kolya',
+//     age: 29,
+//     status: true,
+//     address: {city: 'Budapest', country: 'Hungary', street: 'Kuraku', houseNumber: 78}
+// }, {
+//     name: 'olya',
+//     age: 28,
+//     status: false,
+//     address: {city: 'Prague', country: 'Czech', street: 'Paster', houseNumber: 56}
+// }, {
+//     name: 'max',
+//     age: 30,
+//     status: true,
+//     address: {city: 'Istanbul', country: 'Turkey', street: 'Mikar', houseNumber: 39}
+// }, {
+//     name: 'anya',
+//     age: 31,
+//     status: false,
+//     address: {city: 'Rio', country: 'Brasil', street: 'Ronaldi', houseNumber: 5}
+// }, {
+//     name: 'oleg',
+//     age: 28,
+//     status: false,
+//     address: {city: 'Montreal', country: 'Canada', street: 'Acusto', houseNumber: 90}
+// }, {
+//     name: 'andrey',
+//     age: 29,
+//     status: true,
+//     address: {city: 'Quebeck', country: 'Canada', street: 'Binaro', houseNumber: 33}
+// }, {
+//     name: 'masha',
+//     age: 30,
+//     status: true,
+//     address: {city: 'Moscow', country: 'Russia', street: 'Gogolia', houseNumber: 1}
+// }, {
+//     name: 'olya',
+//     age: 31,
+//     status: false,
+//     address: {city: 'Portland', country: 'USA', street: 'Forest str', houseNumber: 4}
+// }, {
+//     name: 'max',
+//     age: 31,
+//     status: true,
+//     address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
+// }]
+//
+//
+// for (let user of users) {
+//     let k = JSON.stringify(user);
+//     let blockObj=document.createElement('div');
+//     blockObj.innerText=k;
+//     document.body.appendChild(blockObj);
+// }
+// for (us of users){
+//     let k = JSON.stringify(user);
+//     let blockObj=document.createElement('div');
+//     blockObj.innerText=k;
+//     document.body.appendChild(blockObj);
+// }
 
     // let div = document.createElement("div")
     //     document.body.appendChild(div);
