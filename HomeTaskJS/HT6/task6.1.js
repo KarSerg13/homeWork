@@ -12,7 +12,7 @@
 // let numbers = [2, 56 ,48 ,55, 13 ,25, 78, 1, 36, 52, 48, 960,14625,3 ,55,66,89,77,66,22]
 // let sortNumbers = numbers.sort((a, b)=>{
 //     return b-a;
-// });                   // меняет исходный массив?
+// });
 // console.log(sortNumbers);
 
 // 4 -- при помощи filter получить числа кратные 3
@@ -83,18 +83,116 @@
 
 // 11-- отфильтровать слова длиной менее 4х символов
 
-// 12-- перебрать массив при помощи map() и получить новый массив в котором все значения будут со знаком "!" в конце
+/*12-- перебрать массив при помощи map() и получить новый массив в котором все значения будут со знаком "!" в конце*/
+// let arr = ["Lorem", "ipsum", "dolor", "sit", "amet,", "consectetur", "adipisicing", "elit.", "Assumenda", "culpa",
+//     "esse", "facere", "id", "incidunt", "itaque", "laborum,", "nihil", "non,", "numquam",
+//     "officiis", "quas", "repellendus", "sapiente", "soluta,", "sunt", "tempora", "temporibus", "vero.", "Inventore,", "porro."]
+//
+// let a = arr.map(c=>{
+//     return c.concat('!')    // // или можно += '!'
+// } )
+// console.log(a)
 
 
-
-// Все робити через функції масивів (foreach, map ...тд)
-// Дан масив :
-//     let users = [ {name: 'vasya', age: 31, status: false}, {name: 'petya', age: 30, status: true}, {name: 'kolya', age: 29, status: true}, {name: 'olya', age: 28, status: false}, {name: 'max', age: 30, status: true}, {name: 'anya', age: 31, status: false}, {name: 'oleg', age: 28, status: false}, {name: 'andrey', age: 29, status: true}, {name: 'masha', age: 30, status: true}, {name: 'olya', age: 31, status: false}, {name: 'max', age: 31, status: true} ];
-// 13- відсортувати його за  віком (зростання , а потім окремо спадання)
-// 14- відсортувати його за кількістю знаків в імені  (зростання , а потім окремо спадання)
-// 15- пройтись по ньому та додати кожному юзеру поле id - яке характеризує унікальний індентифікатор (По якому принципу його створювати - ваше рішення), та зберегти це в новий масив (первинний масив залишиться без змін)
-// 16- відсортувати його за індентифікатором
+/*Все робити через функції масивів (foreach, map ...тд). Дан масив :*/
+/*let users = [ {name: 'vasya', age: 31, status: false}, {name: 'petya', age: 30, status: true}, {name: 'kolya', age: 29, status: true},
+    {name: 'olya', age: 28, status: false}, {name: 'max', age: 30, status: true}, {name: 'anya', age: 31, status: false},
+    {name: 'oleg', age: 28, status: false}, {name: 'andrey', age: 29, status: true}, {name: 'masha', age: 30, status: true},
+    {name: 'olya', age: 31, status: false}, {name: 'max', age: 31, status: true} ];*/
 
 
-// 17-- наисать функцию калькулятора с 2мя числами и колбеком
+/*13- відсортувати його за  віком (зростання , а потім окремо спадання)*/
+// let users = [
+//     {name: 'vasya', age: 31, status: false},
+//     {name: 'petya', age: 30, status: true},
+//     {name: 'kolya', age: 29, status: true},
+//     {name: 'olya', age: 28, status: false},
+//     {name: 'max', age: 30, status: true},
+//     {name: 'anya', age: 31, status: false},
+//     {name: 'oleg', age: 28, status: false},
+//     {name: 'andrey', age: 29, status: true},
+//     {name: 'masha', age: 30, status: true},
+//     {name: 'olya', age: 31, status: false},
+//     {name: 'max', age: 31, status: true}
+//     ];
+
+
+/* 14- відсортувати його за кількістю знаків в імені  (зростання , а потім окремо спадання)*/
+// increase//
+// let sortArr = users.sort((a, b)=>{
+//     if (a.name.length<b.name.length) {return -1}
+// });
+// console.log(sortArr);
+
+// decrease//
+// let sortArr = users.sort((a, b)=>{
+//     if (a.name.length>b.name.length) {return -1}
+// });
+// console.log(sortArr);
+
+/* 15- пройтись по ньому та додати кожному юзеру поле id - яке характеризує унікальний індентифікатор
+(По якому принципу його створювати - ваше рішення), та зберегти це в новий масив (первинний масив залишиться без змін) */
+// let users = [
+//     {name: 'vasya', age: 31, status: false},
+//     {name: 'petya', age: 30, status: true},
+//     {name: 'kolya', age: 29, status: true},
+//     {name: 'olya', age: 28, status: false},
+//     {name: 'max', age: 30, status: true},
+//     {name: 'anya', age: 31, status: false},
+//     {name: 'oleg', age: 28, status: false},
+//     {name: 'andrey', age: 29, status: true},
+//     {name: 'masha', age: 30, status: true},
+//     {name: 'olya', age: 31, status: false},
+//     {name: 'max', age: 31, status: true}
+// ];
+// let newUss = users.map((el, i) =>{
+//     el.id= Math.round(Math.random()*150) ;
+//      return el;
+// });
+// console.log(newUss);
+
+
+/*16- відсортувати його за індентифікатором*/
+// let users = [
+//     {name: 'vasya', age: 31, status: false},
+//     {name: 'petya', age: 30, status: true},
+//     {name: 'kolya', age: 29, status: true},
+//     {name: 'olya', age: 28, status: false},
+//     {name: 'max', age: 30, status: true},
+//     {name: 'anya', age: 31, status: false},
+//     {name: 'oleg', age: 28, status: false},
+//     {name: 'andrey', age: 29, status: true},
+//     {name: 'masha', age: 30, status: true},
+//     {name: 'olya', age: 31, status: false},
+//     {name: 'max', age: 31, status: true}
+// ];
+// let newUss = users.map((el, i) =>{
+//     el.id= Math.round(Math.random()*150) ;
+//     return el;
+// });
+// console.log(newUss);
+// // decrease//
+// let sortArr = newUss.sort((a, b)=>{
+//     if (a.id>b.id) {return -1}
+// });
+// console.log(sortArr);
+
+/*17-- наисать функцию калькулятора с 2мя числами и колбеком*/
+// function calc2(a, b , callback){
+// return callback (a,b)
+// }
+//
+// let res = calc2(2,3, (a,b)=>{
+//     return a+b;
+// })
+//
+// console.log(res)
 // 18-- наисать функцию калькулятора с 3мя числами и колбеком.+
+
+// function calc3(a, b, c, callback){
+//     return callback (a,b,c)
+// }
+// let res = calc3(2,3,5, (a,b,c)=>{
+//     return a+b+c;
+// })
+// console.log(res)
