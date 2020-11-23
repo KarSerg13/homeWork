@@ -224,20 +224,6 @@
 
 
 /* 13 -- взять массив пользователей
-let usersWithAddress = [
-    {id:1,name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
-    {id:2,name: 'petya', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 1}},
-    {id:3,name: 'kolya', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}},
-    {id:4,name: 'olya', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 90}},
-    {id:5,name: 'max', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 115}},
-    {id:6,name: 'anya', age: 31, status: false, address: {city: 'Kyiv', street: 'Shevchenko', number: 2}},
-    {id:7,name: 'oleg', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 22}},
-    {id:8,name: 'andrey', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 43}},
-    {id:9,name: 'masha', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 12}},
-    {id:10,name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
-    {id:11,name: 'max', age: 31, status: true, address: {city: 'Ternopil', street: 'Shevchenko', number: 121}}
-];*/
-
 /* - Создать три чекбокса.
 - Каждый из них активирует фильтр для вышеуказаного массива.
 - Фильтры могут работать как вместе так и по отдельности.
@@ -245,15 +231,88 @@ let usersWithAddress = [
 * 2й - оставляет старше 29 лет включительно
 * 3й - оставляет тех у кого город киев
 Данные выводить в документ */
-
-
+// let usersWithAddress = [
+//     {id:1,name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
+//     {id:2,name: 'petya', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 1}},
+//     {id:3,name: 'kolya', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}},
+//     {id:4,name: 'olya', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 90}},
+//     {id:5,name: 'max', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 115}},
+//     {id:6,name: 'anya', age: 31, status: false, address: {city: 'Kyiv', street: 'Shevchenko', number: 2}},
+//     {id:7,name: 'oleg', age: 28, status: false, address: {city: 'Ternopil', street: 'Shevchenko', number: 22}},
+//     {id:8,name: 'andrey', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 43}},
+//     {id:9,name: 'masha', age: 30, status: true, address: {city: 'Kyiv', street: 'Shevchenko', number: 12}},
+//     {id:10,name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
+//     {id:11,name: 'max', age: 31, status: true, address: {city: 'Ternopil', street: 'Shevchenko', number: 121}}
+// ];
+//
+//
+// const content= document.getElementById('content');
+// const userDiv = document.createElement('div');
+// userDiv.className='user';
+// userDiv.appendChild(renderContent(usersWithAddress));
+//
+// const input1=document.createElement('input');
+// const input2=document.createElement('input');
+// const input3=document.createElement('input');
+//
+// const lable1=document.createElement('label');
+// const lable2=document.createElement('label');
+// const lable3=document.createElement('label');
+//
+// const button =document.createElement('button');
+//
+// lable1.innerText ='статус false';
+// lable2.innerText ='старше 29 лет включительно';
+// lable3.innerText ='киев';
+// button.innerText ='filter On';
+//
+// input1.type='checkbox';
+// input2.type='checkbox';
+// input3.type='checkbox';
+//
+// content.appendChild(userDiv);
+//
+// content.appendChild(lable1);
+// content.appendChild(input1);
+//
+// content.appendChild(lable2);
+// content.appendChild(input2);
+//
+// content.appendChild(lable3);
+// content.appendChild(input3);
+//
+// content.appendChild(button);
+//
+// button.onclick= event =>{
+//     let myArray =JSON.parse(JSON.stringify(usersWithAddress))
+//     if(input1.checked) myArray=myArray.filter(value => !value.status);
+//     if(input2.checked) myArray=myArray.filter(value => value.age>= 29);
+//     if(input3.checked) myArray=myArray.filter(value => value.address.city==='Kyiv');
+//
+//     userDiv.innerHTML ='';
+//     userDiv.appendChild(renderContent(myArray));
+// }
+//
+// function renderContent(array) {
+//     const main =document.createElement('div');
+//     array.forEach(item => {
+//         const div = document.createElement('div');
+//         div.innerHTML=JSON.stringify(item);
+//         main.appendChild(div);
+//     })
+//     return main;
+// }
 
 /* 14
-*****(Прям овердоз с рекурсией) Создать функцию которая принимает какой-либо элемент DOM-структуры .Функция создает в боди 2 кнопки (назад/вперед)
-при нажатии вперед, вы переходите к дочернему элементу, при еще одном нажатии на "вперед", вы переходите к следующему дочернему элементу
-(лежащему на одном уровне) НО если у (какого-либо)дочеренего элемента есть дети, то нажатие "вперед" позволяет нам войти внутрь элемента
+*****(Прям овердоз с рекурсией) Создать функцию которая принимает какой-либо элемент DOM-структуры .
+Функция создает в боди 2 кнопки (назад/вперед)
+при нажатии вперед, вы переходите к дочернему элементу, при еще одном нажатии на "вперед",
+вы переходите к следующему дочернему элементу
+(лежащему на одном уровне) НО если у (какого-либо)дочеренего элемента есть дети,
+то нажатие "вперед" позволяет нам войти внутрь элемента
 и  выводит первого ребенка. и тд.
-    Когда все дети заканчиваются, мы выходим из данного дочернего элемента и переходим к следующему, лежащему с ним на одном уровне
-*/
+    Когда все дети заканчиваются, мы выходим из данного дочернего элемента и переходим к следующему,
+    лежащему с ним на одном уровне */
 
-/* 15*** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан */
+/* 15*** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або
+якось іншим способом змінює свій стан */
