@@ -4,9 +4,9 @@ import User from "../user/User";
 class AllUsers extends Component {
     state = {users: [], chooseOne: null};
 
-    constructor() {
-        super();
-    }
+    // constructor() {
+    //     super();
+    // }
     oneSelectUser =(id)=>{
         let {users, chooseOne}= this.state;
       let find = users.find(value=>value.id===id);
@@ -18,7 +18,9 @@ class AllUsers extends Component {
         return (
             <div>
                 {
-                    users.map(user => <User item ={user} key = {user.id} onSelectUser ={this.oneSelectUser}/>)
+                    users.map(user => <User item ={user}
+                                            key = {user.id}
+                                            onSelectUser = {this.oneSelectUser}/>)
                 // users.map(user => <div> {user.name}</div>)
                 }
                 {

@@ -6,8 +6,10 @@ class User extends Component {
         return (
             <div>
                 {item.id}-{item.name}
-                <button onClick={()=> onSelectUser(item.id)}>button</button>
-                {/*<button onClick={onSelectUser.bind(this, item.id)}>button</button>*/}
+                <button onClick={()=>
+                    onSelectUser(item.id)}>button</button>
+                {/*<button onClick={onSelectUser.bind
+                (this, item.id)}>button</button>*/}
             </div>
         );
     }
